@@ -1,0 +1,19 @@
+class customer:
+    def __init__(self,name,age,initial_amount):
+        self.name=name
+        self.age=age
+        self.bal=initial_amount
+    def deposit(self,amount):
+        self.bal+=amount
+        print(f"you are deposited the amount is {amount}\n your total amount is {self.bal}")
+
+c1=customer("naveen",20,500)
+c1.deposit(40)
+
+# print(c1.name)
+# print(c1.age)
+# print(c1.bal)
+# c2=customer("raghu",20,700)
+# print(c2.name)
+# print(c2.age)
+# print(c2.bal)
